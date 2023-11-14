@@ -4,7 +4,7 @@ import Page from './components/Page.vue'
 
 <template>
   <div class="page-outer A4">
-    <Page msg="Atlan Talebi" />
+    <Page />
   </div>
 </template>
 
