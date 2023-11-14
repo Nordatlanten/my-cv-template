@@ -1,0 +1,87 @@
+.page-outer {
+  margin: 0;
+}
+
+.page {
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  page-break-after: always;
+}
+
+.page-outer.A4 .page {
+  width: 210mm;
+  height: 296mm;
+}
+
+
+body {
+  margin: 0;
+}
+
+@media screen {
+  body {
+    background: #e0e0e0;
+  }
+
+  .page {
+    background: white;
+    box-shadow: 0 .5mm 2mm rgba(0, 0, 0, .2);
+    margin: 5mm auto;
+  }
+}
+
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  .page-outer.A4 .page-outer.A5.landscape {
+    width: 210mm;
+  }
+}
+
+:root {
+  font-family: Shibui-LightExtended, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  color: auto;
+}
+
+h2 {
+  color: #444;
+  font-size: 1.3rem;
+  margin: 0 0 3mm;
+}
+
+h3 {
+  color: #888;
+  font-size: 1rem;
+  margin: 2mm 0 0;
+  line-height: 0.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Lovelo Black, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  letter-spacing: 0.5mm;
+}
+
+p {
+  margin: 2mm 0 6mm;
+  font-size: 0.9rem;
+  letter-spacing: 0.1mm;
+  line-height: 1.5;
+}
+
+li {
+  line-height: 1.5;
+}
